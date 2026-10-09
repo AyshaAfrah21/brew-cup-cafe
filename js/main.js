@@ -5,7 +5,7 @@
    ------------------------------------------------------------------ */
 const CONFIG = {
   // WhatsApp number that receives table requests (country code, digits only)
-  whatsapp: '918385400210',
+  whatsapp: '918884115566',
 
   // OPTIONAL: email delivery via https://web3forms.com (free).
   // Sign up with the cafe's email, paste the access key here, and a

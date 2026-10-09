@@ -23,7 +23,7 @@ There is no server, so the form does one of two things:
 
    ```js
    const CONFIG = {
-     whatsapp: '918385400210',   // country code + number, digits only
+     whatsapp: '918884115566',   // country code + number, digits only
      web3formsKey: '',
    };
    ```
