@@ -58,6 +58,8 @@ In **Settings > Pages > Custom domain** enter the domain (for example `thebrewcu
 
 ## Editing content
 
-Everything is in `index.html`. Search for the text you want to change. The menu is a list of `<li class="menu-item">` blocks inside each category panel; copy one to add an item. Hours and address appear in three places (info cards, the Hours & location section, and the footer), so update all three.
+Everything is in `index.html`. Search for the text you want to change. The menu is a list of `<li class="menu-item">` blocks inside each category panel; copy one to add an item. Hours and address appear in three places (info cards, the Hours & location section, and the footer), so update all three. The map is a plain Google Maps embed; change the `q=` text in the iframe `src` and the Get Directions link to move it.
 
-Photos are loaded from Unsplash so the page works without any image files. To use the cafe's own photos, put them in an `images/` folder and change the `src` URLs.
+Menu item photos are the cafe's own, stored in `images/menu/` (taken from the Petpooja dine-in menu). Other photos (hero, gallery, category banners) are loaded from Unsplash. To swap any of them, drop a file into `images/` and change the `src` URL.
+
+The site currently shows only the hot coffee, cold coffee and pastry sections of the full menu. To add more, copy a `<li class="menu-item">` block or a whole `menu-panel` + tab button pair.

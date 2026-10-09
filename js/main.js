@@ -25,6 +25,11 @@ const CONFIG = {
   const onScroll = () => header && header.classList.toggle('is-scrolled', window.scrollY > 40);
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
+  // Expose the header height so the sticky menu tabs sit right under it on phones
+  const setHeaderH = () => header && document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
+  setHeaderH();
+  window.addEventListener('resize', setHeaderH);
+  header && header.addEventListener('transitionend', setHeaderH);
 
   /* ---------- mobile navigation ---------- */
   const toggle = $('#navToggle');
